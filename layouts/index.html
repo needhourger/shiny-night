@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html>
-  {{- partial "head.html" . -}}
-
-  <body>
-    {{- partial "header.html" . -}}
-    <div id="content">{{- block "main" . }}{{- end }}</div>
-    {{- partial "footer.html" . -}}
-
-    <button type="button" class="btn btn-primary">test bootstrap</button>
-  </body>
-</html>
+{{ define "main" }}
+<div class="container-fluid p-0" style="height:100vh">
+  <h1>hello world</h1>
+</div>
+{{ end }}

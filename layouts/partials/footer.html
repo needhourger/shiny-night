@@ -1,0 +1,10 @@
+<div class="container-fluid p-0 text-center bg-light">
+  <div class="row">
+    <div class="col">
+      &copy;
+      {{ if (and .Site.Params.since (lt .Site.Params.since now.Year)) }}{{ .Site.Params.since }}-{{ end -}}
+      {{ now.Year }} {{ with .Site.Params.author }}{{ . }}{{ end }}
+      Powered by <a href="#" target="_blank">hugo</a>
+    </div>
+  </div>
+</div>

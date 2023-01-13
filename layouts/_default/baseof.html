@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
   {{- partial "head.html" . -}}
-
   <body>
-    {{- partial "header.html" . -}}
-    <div id="content">{{- block "main" . }}{{- end }}</div>
-    {{- partial "footer.html" . -}}
+    <div class="sticky-top">{{- partial "header.html" . -}}</div>
+    {{- block "main" . }}{{- end }}
+    <div class="clearfix">{{- partial "footer.html" . -}}</div>
   </body>
 </html>
