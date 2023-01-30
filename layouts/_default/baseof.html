@@ -3,7 +3,9 @@
   {{- partial "head.html" . -}}
   <body>
     <div class="sticky-top">{{- partial "header.html" . -}}</div>
+    <div class="mt-6">
       {{- block "main" . }}{{- end }}
+    </div>
     <div class="clearfix">{{- partial "footer.html" . -}}</div>
   </body>
 </html>

@@ -10,3 +10,30 @@
     background-color: lightslategray;
     outline: 1px solid slategrey;
 }
+
+.test {
+    background-image: url('https://pica.zhimg.com/v2-375b0382103ac6af38e7eddc9d71ccd9_1440w.jpg?source=172ae18b');
+}
+
+.frosted::before{
+    content: "";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    backdrop-filter: blur(20px);
+    color: rgba(255, 255, 255, 0.2);
+    z-index: 1;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #ffc0cbaa;
+    border-radius: 100%;
+    overflow: hidden;
+}

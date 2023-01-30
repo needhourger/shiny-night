@@ -1,12 +1,6 @@
 {{ define "main" }}
 <div class="row container-fluid">
-  {{- partial "component/userInfo.html" . -}}
-  <div class="col-8" style="top: 100px;">{{ .Content }}</div>
-  <!-- <div class="col-sm-2">
-    <div class="position-sticky" style="top: 2rem;">
-      {{ .TableOfContents }}
-    </div>
-  </div> -->
   {{- partial "component/toc.html" . -}}
+  <div class="col-lg-7 col-12" style="top: 100px;">{{ .Content }}</div>
 </div>
 {{ end }}
