@@ -36,4 +36,21 @@
     border: 5px solid #ffc0cbaa;
     border-radius: 100%;
     overflow: hidden;
+    text-align: center;
+    margin: auto;
+}
+
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+
+.avatar img {
+    max-height: 100%;
+    -webkit-transform: rotate(360deg);
+    animation: rotation 25s linear infinite;
+    -moz-animation: rotation 25s linear infinite;
+    -webkit-animation: rotation 30s linear infinite;
+    -o-animation: rotation 25s linear infinite;
+    ;
 }
